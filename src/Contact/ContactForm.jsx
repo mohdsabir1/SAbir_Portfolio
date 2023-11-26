@@ -46,8 +46,13 @@ export const ContactForm = () => {
         setErrors({ ...errors, message: false });
       }
   
-   
+   alert(formData);
     console.log('Form data:', formData);
+      const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
 
   return (
